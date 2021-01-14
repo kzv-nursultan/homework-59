@@ -7,12 +7,11 @@ const SecondTask = () =>{
 
     const fetchData = async () =>{
         const response = await fetch(url);
-
         if(response.ok) {
             const joke = await response.json();
             setJokes(joke);
-        }
-    }
+        };
+    };
 
     useEffect(()=>{
        fetchData();
@@ -27,7 +26,7 @@ const SecondTask = () =>{
                 joke={jokes.value}/>
                 <p>
                     <button onClick={fetchData} className='btn btn-warning'>
-                        Fun captions about Chuck Norriss
+                        Fun captions about Chuck Norris
                     </button>
                 </p>
         </div>

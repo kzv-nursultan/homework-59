@@ -12,7 +12,6 @@ class FirstTask extends Component{
     onClick = () => {  
         const updatedstate = {movies:[...this.state.movies, this.newObject]};
         this.setState(updatedstate);
-        console.log(this.state)
     }
 
     onChange = (e) =>{

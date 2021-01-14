@@ -7,7 +7,7 @@ class MovieName extends PureComponent{
                 <input
                 value={this.props.value}
                 onChange={this.props.onChange}/>
-                <button className="btn btn-dark">
+                <button className="btn btn-dark" onClick={this.props.onClick}>
                     Delete
                 </button>
             </div>

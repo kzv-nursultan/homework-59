@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import FirstTask from '../FirstTask/FirstTask';
+import SecondTask from '../SecondTask/SecondTask';
 
 const MainPage = () =>{
     const [mode, setMode] = useState('first');
@@ -11,7 +12,7 @@ const MainPage = () =>{
 
 
     return(
-        <div>
+        <div className='bg-danger p-4 text-white'>
            <div>
             <input
             type='radio'
@@ -43,7 +44,7 @@ const MainPage = () =>{
            <div>
                {mode==='second' && (
                    <div>
-                       second task
+                       <SecondTask/>
                    </div>
                )}
            </div>
